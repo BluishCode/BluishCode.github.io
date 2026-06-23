@@ -83,7 +83,7 @@ nav a:hover {
 }
 
 .hero {
-    height: 200px;
+    height: 230px;
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
         url("images/dunveganloch.jpg") center/cover;
@@ -228,7 +228,7 @@ footer {
         order:1;
     }
 
-    .regional-breakdown{
+    .region-breakdown{
         order:2;
     }
     
