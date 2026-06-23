@@ -178,6 +178,12 @@ main {
     border-radius: 4px;
 }
 
+.region-breakdown {
+    max-width: 1200px;
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+}
 footer {
     text-align: center;
     padding: 2rem;
@@ -196,6 +202,10 @@ footer {
         order:1;
     }
 
+    .regional-breakdown{
+        order:2;
+    }
+    
     .sidebar{
         order: 99;
     }
