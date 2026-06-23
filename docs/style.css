@@ -56,6 +56,8 @@ header {
 
 nav {
     background: #1d3557;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 nav ul {
@@ -81,7 +83,7 @@ nav a:hover {
 }
 
 .hero {
-    height: 350px;
+    height: 200px;
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
         url("images/dunveganloch.jpg") center/cover;
@@ -116,6 +118,15 @@ main {
     gap: 2rem;
 }
 
+.main2{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 4fr;
+    gap: 2rem;
+}
+
 .content {
     background: white;
     border: 2px solid #594512;
@@ -147,6 +158,14 @@ main {
     display: block;
 
     border: 2px solid #594512;
+}
+
+.content-center{
+    background: white;
+    border: 2px solid #594512;
+    padding: 2rem;
+    border-radius: 0px;
+    text-align: center;
 }
 .sidebar {
     background: white;
