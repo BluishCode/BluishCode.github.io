@@ -1,0 +1,242 @@
+/*
+--clan-blue: #1d3557;
+--clan-gold: #594512;
+--clan-cream: #f2ebd8;
+--clan-brown: #4d3725;
+--clan-green: #314a36;
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Garamond, serif;
+    line-height: 1.6;
+    background: #f2ebd8;
+    color: #333;
+}
+
+header {
+    background: url("images/clan_macleod_harris_tartan.jpg");
+    color: white;
+}
+
+.logo-area {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 2rem;
+
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.logo-area h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px #1d3557
+}
+
+.logo-area p {
+    font-style: italic;
+    text-shadow: 2px 2px 2px #1d3557
+}
+
+.burger {
+    display: none;
+    text-shadow: 2px 2px 2px #1d3557;
+}
+
+.burger-highlight{
+    background-color: #1d3557;
+}
+
+nav {
+    background: #1d3557;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 1rem 1.25rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #b8962e;
+}
+
+.hero {
+    height: 350px;
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("images/dunveganloch.jpg") center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    text-align: center;
+    color: white;
+    max-width: 700px;
+    padding: 1rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 2px #333;
+}
+
+.hero p{
+    text-shadow: 2px 2px 2px #333;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+}
+
+.content {
+    background: white;
+    border: 2px solid #594512;
+    padding: 2rem;
+    border-radius: 0px;
+}
+
+.content p {
+    text-indent: 30px;
+}
+
+.content-layout{
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.content-image{
+    flex: 1;
+}
+
+.content-text{
+    flex: 2;
+}
+
+.content-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    border: 2px solid #594512;
+}
+.sidebar {
+    background: white;
+    border: 2px solid #594512;
+    padding: 2rem;
+    border-radius: 0px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: .75rem;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #14395b;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #14395b;
+    color: white;
+    text-decoration: none;
+    padding: .75rem 1.25rem;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #14395b;
+    color: white;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content{
+        order:1;
+    }
+
+    .sidebar{
+        order: 99;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .burger {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin: 1rem auto;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li {
+        padding: 0.5rem 0;
+    }
+
+    .content-layout{
+        flex-direction: column;
+    }
+
+    .content-image,
+    .content-text{
+        width: 100%;
+    }
+}
