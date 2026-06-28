@@ -1,7 +1,7 @@
 const SUPABASE_URL = "https://emloyjampawjqmrrwoqo.supabase.co";
 const SUPABASE_ANNON_KEY = "sb_publishable_LAcvlWiTlAjK05phHYJvTg_R7pbIvFH";
 
-const supabase = window.supabase.createClient(
+const supabased = window.supabase.createClient(
     SUPABASE_URL,
     SUPABASE_ANNON_KEY
 );
@@ -9,7 +9,7 @@ const supabase = window.supabase.createClient(
 //Login
 
 async function login(email, password) {
-    const {data, error} = await supabase.auth.signInWithPassword({
+    const {data, error} = await supabased.auth.signInWithPassword({
         email,
         password
     });
@@ -23,7 +23,7 @@ async function login(email, password) {
 }
 
 async function getSession() {
-    const {data} = await supabase.auth.getSession();
+    const {data} = await supabased.auth.getSession();
 
     return data.session;
 }
@@ -31,4 +31,16 @@ async function getSession() {
 async function isLoggedIn() {
     const session = await getSession();
     return session !== null;
+}
+
+async function logout() {
+    const {error} = await supabased.auth.signOut();
+
+    if(error){
+        console.error("Logout error:", error.message);
+        alert("Logout Failed: " + error.message);
+        return;
+    }
+
+    window.location.href = "index.html";
 }
