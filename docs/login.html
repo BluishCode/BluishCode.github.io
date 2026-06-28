@@ -1,74 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="educational, scotland, culture, music, literature, social">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="educational, scotland, culture, music, literature, social"
+    />
     <title>Clan Macleod Society USA</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header>
-    <div class="logo-area">
-        <img src="images/holdfast.jpg"
-            alt="Clan Macleod Crest"
-            class="crest">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-area">
+        <img src="images/holdfast.jpg" alt="Clan Macleod Crest" class="crest" />
 
         <div class="title-block">
-        <h1>Clan Macleod Society, USA</h1>
-        <p>Hold Fast</p>
+          <h1>Clan Macleod Society, USA</h1>
+          <p>Hold Fast</p>
         </div>
 
-        <img src="images/luceononuro.jpg"
-            alt="Clan Macleod Crest"
-            class="crest">
+        <img
+          src="images/luceononuro.jpg"
+          alt="Clan Macleod Crest"
+          class="crest"
+        />
+      </div>
 
-    </div>
+      <button class="burger" id="burgerBtn">
+        <span class="burger-highlight"> ☰</span>
+      </button>
 
-    <button class="burger" id="burgerBtn"><span class="burger-highlight">
-        ☰</span>
-    </button>
-
-    <nav id="navMenu">
+      <nav id="navMenu">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="info.html">Info</a></li>
-            <li><a href="regions.html">Regions</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="https://clanmacleodusa.tribalpages.com/">Genealogy</a></li>
-            <li><a href="https://nebula.wsimg.com/78ba3bd5cffefc93fde13069beebdac7?AccessKeyId=088DE7FB67531E10106D&disposition=0&alloworigin=1">Dunvegan foundation</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="info.html">Info</a></li>
+          <li><a href="regions.html">Regions</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li>
+            <a href="https://clanmacleodusa.tribalpages.com/">Genealogy</a>
+          </li>
+          <li>
+            <a
+              href="https://nebula.wsimg.com/78ba3bd5cffefc93fde13069beebdac7?AccessKeyId=088DE7FB67531E10106D&disposition=0&alloworigin=1"
+              >Dunvegan foundation</a
+            >
+          </li>
         </ul>
 
-        <ul><li><a href="login.html">Members Login</a></li></ul>
-    </nav>
- 
-</header>
+        <ul>
+          <li><a href="login.html">Members Login</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<section class="hero">
-    <div class="hero-overlay">
+    <section class="hero">
+      <div class="hero-overlay">
         <h2>Welcome Clan Macleod Members!</h2>
         <p>
-            Use this page to login for member information. If you have forgotten your username or password, please get in touch with your regional vp.
+          Use this page to login for member information. If you have forgotten
+          your username or password, please get in touch with your regional vp.
         </p>
-    </div>
-</section>
-
-<main class="main2">
-    <section class="content-center">
-        <h2>Member login</h2>
-        <p>Username:<input id="username"><br>
-        Password:<input id="password"><br>
-        <button id="login" class="button">Login</button></p>
+      </div>
     </section>
 
-</main>
+    <main class="main2">
+      <section class="content-center">
+        <form id="loginForm">
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your Email"
+            required
+          /><br />
+          <label for="password">Password: </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your Password"
+            required
+          /><br />
 
-<footer>
-    <p>This is a test website made by Gavin Cloyd.</p>
-</footer>
+          <button class="button" type="submit">Log In</button>
+        </form>
+    </main>
 
-<script src="script.js"></script>
-</body>
+    <footer>
+      <p>This is a test website made by Gavin Cloyd.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
