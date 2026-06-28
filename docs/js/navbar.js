@@ -25,7 +25,10 @@ if (!session){
             >
           </li>
         </ul>
-    
+        
+        <ul>
+          <li><a href="login.html">Members Login</a></li>
+        </ul>
     `;
 } else {
     document.getElementById("navMenu").innerHTML =`
