@@ -1,4 +1,3 @@
-
 async function buildNavbar(){
   let nav = `
     <ul>
@@ -45,9 +44,5 @@ async function buildNavbar(){
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  buildNavbar();
-
-});
 
 
