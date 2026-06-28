@@ -9,5 +9,9 @@ const loginForm = document.getElementById("loginForm");
             
             if(success){
                 window.location.href = "index.html"
-            }
+            } else (
+                console.log('login failed')
+            )
         });
+
+console.log(loginForm)
