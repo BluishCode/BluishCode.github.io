@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="educational, scotland, culture, music, literature, social"
+    />
+    <title>Clan Macleod Society Great Lakes Account Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-overlay">
+        <h2>Account Setup</h2>
+      </div>
+    </section>
+    <main>
+      <section class="content">
+        <div class="profile-setup">
+          <div class="profile-header">
+            <h2>Edit Your Profile</h2>
+          </div>
+
+          <!-- Avatar Upload -->
+          <div class="avatar-section">
+            <div class="avatar-preview" id="avatarPreview">
+              <h3>Photo</h3>
+            </div>
+            <input type="file" id="avatarUpload" accept="image/*" />
+          </div>
+          <br />
+          <!-- Profile Form -->
+          <form id="profileForm" class="profile-form">
+            <!-- email -->
+            <div class="input-group">
+              <label for="email"><h4>Email</h4></label>
+              <input type="text" id="email" placeholder="email@example.com" />
+            </div>
+
+            <div class="input-group">
+              <label for="phone"><h4>Phone</h4></label>
+              <input type="text" id="phone" placeholder="(###)###-####" />
+            </div>
+
+            <!-- Username -->
+            <div class="input-group">
+              <label for="username"><h4>Name / Username</h4></label>
+              <input type="text" id="username" placeholder="e.g. SonOfLeod" />
+            </div>
+
+            <!-- Location -->
+            <div class="input-group">
+              <label for="location"><h4>Location</h4></label>
+              <input
+                type="text"
+                id="location"
+                placeholder="City, State / Country"
+              />
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-grid">
+              <div class="input-group">
+                <div class="input-group">
+                  <label for="facebook"><h4>Facebook</h4></label>
+                  <input
+                    type="url"
+                    id="facebook"
+                    placeholder="https://facebook.com/username"
+                  />
+                </div>
+
+                <label for="instagram"><h4>Instagram</h4></label>
+                <input
+                  type="url"
+                  id="instagram"
+                  placeholder="https://instagram.com/username"
+                />
+              </div>
+
+              <div class="input-group">
+                <label for="twitter"><h4>X (Twitter)</h4></label>
+                <input
+                  type="url"
+                  id="twitter"
+                  placeholder="https://x.com/username"
+                />
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="form-actions">
+              <button type="submit" class="primary-btn" id="saveBtn">
+                Save Profile
+              </button>
+            </div>
+
+            <p id="profileMessage" class="status-message"></p>
+          </form>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <h3>Quick Links</h3>
+
+        <ul>
+          <li><a href="#">Clan History</a></li>
+          <li><a href="#">Septs</a></li>
+          <li><a href="#">Upcoming Events</a></li>
+          <li><a href="#">Membership</a></li>
+          <li><a href="#">Regional Contacts</a></li>
+        </ul>
+      </aside>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/loadEmail.js"></script>
+  </body>
+</html>

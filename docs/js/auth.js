@@ -44,3 +44,22 @@ async function logout() {
 
     window.location.href = "index.html";
 }
+
+async function loadProfile() {
+    const {
+        data: {user}
+     } = await supabase.auth.getUser();
+
+     if (!user) {
+        window.location.href = "login.html";
+        return;
+     }
+    
+    document.getElementById("email") = user.email;
+    document.getElementById("phone") = user.phone;
+    document.getElementById("username") = user.username;
+    document.getElementById("location") = user.location;
+    document.getElementById("facebook") = user.facebook;
+    document.getElementById("instagram") = user.instagram;
+    document.getElementById("twitter") = user.twitter;
+}
