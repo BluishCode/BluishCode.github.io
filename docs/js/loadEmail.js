@@ -42,7 +42,6 @@ async function saveProfile() {
   const { error } = await supabased
     .from("profiles")
     .update({
-      phone: document.getElementById("phone").value,
       username: document.getElementById("username").value,
       location: document.getElementById("location").value,
       facebook: document.getElementById("facebook").value,

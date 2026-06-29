@@ -3,8 +3,8 @@ async function buildNavbar() {
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="info.html">Info</a></li>
-      <li><a href="regions.html">Regions</a></li>
       <li><a href="events.html">Events</a></li>
+      <li><a href="regions.html">Regions</a></li>
       <li><a href="join.html">Join</a></li>
     </ul>
     `;
