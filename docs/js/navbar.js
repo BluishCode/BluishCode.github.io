@@ -1,4 +1,4 @@
-async function buildNavbar(){
+async function buildNavbar() {
   let nav = `
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -9,16 +9,10 @@ async function buildNavbar(){
       <li>
         <a href="https://clanmacleodusa.tribalpages.com/">Genealogy</a>
       </li>
-      <li>
-        <a
-          href="https://nebula.wsimg.com/78ba3bd5cffefc93fde13069beebdac7?AccessKeyId=088DE7FB67531E10106D&disposition=0&alloworigin=1"
-          >Dunvegan foundation</a
-        >
-      </li>
     </ul>
     `;
 
-  if (await isLoggedIn()){
+  if (await isLoggedIn()) {
     nav += `
       <ul>
         <li><a href="account.html">My Account</a></li>
@@ -26,7 +20,7 @@ async function buildNavbar(){
       </ul>
     `;
   } else {
-    nav +=`
+    nav += `
       <ul>
         <li><a href="login.html">Members Login</a></li>
       </ul>
@@ -34,15 +28,12 @@ async function buildNavbar(){
   }
 
   document.getElementById("navMenu").innerHTML = nav;
-  
+
   let logoutBtn = document.getElementById("logoutBtn");
-  if(logoutBtn){
+  if (logoutBtn) {
     logoutBtn?.addEventListener("click", async (e) => {
       e.preventDefault();
       await logout();
-  });
+    });
   }
 }
-
-
-
