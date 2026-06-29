@@ -6,9 +6,6 @@ async function buildNavbar() {
       <li><a href="regions.html">Regions</a></li>
       <li><a href="events.html">Events</a></li>
       <li><a href="join.html">Join</a></li>
-      <li>
-        <a href="https://clanmacleodusa.tribalpages.com/">Genealogy</a>
-      </li>
     </ul>
     `;
 
