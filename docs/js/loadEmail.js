@@ -64,3 +64,19 @@ document.getElementById("saveBtn").addEventListener("click", async (e) => {
   e.preventDefault();
   await saveProfile();
 });
+
+async function delProfile() {
+  const {
+    data: { user },
+  } = await supabased.auth.getUser();
+
+  const { error } = await supabased.from("profiles").delete().eq("id", user.id);
+
+  if (error) {
+    console.error(error);
+    alert(error.message);
+    return;
+  }
+
+  window.location.href("index.html");
+}

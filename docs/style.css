@@ -216,6 +216,8 @@ footer {
     background: #14395b;
     color: white;
     margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 @media (max-width: 768px) {
