@@ -220,6 +220,26 @@ footer {
     grid-template-columns: 2fr 1fr;
 }
 
+/* Remove default numbers and reset the tracking counter */
+ol.nested-list, ol.nested-list ol {
+  list-style-type: none;
+  counter-reset: item;
+  padding-left: 20px;
+}
+
+/* Increment the counter for every list item */
+ol.nested-list li {
+  counter-increment: item;
+}
+
+/* Generate the multi-decimal numbering (e.g., 2.1) */
+ol.nested-list li::before {
+  content: counters(item, ".") " ";
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+
 @media (max-width: 768px) {
     main {
         display: flex;
